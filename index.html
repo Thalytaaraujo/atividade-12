@@ -5,30 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>javaaaassssss</title>
     <title>hello javascript</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-
 </head>
+
 
 <body>
         <h1 style="text-align: center;">Atividade <span class="badge badge-secondary">12</span></h1>
 
-    <table>
+      <table>
 
-          <button type="button" class="btn btn-primary">mostrar texto</button>
-           
-          <button type="button" class="btn btn-success">ocultar texto</button>
-            
-          <button type="button" class="btn btn-danger">trocar texto </button>
-      
-        <p id="texto"> nome:</p>
-        <input id="input-texto">
-        <button id="btnTrocartexto"onclick="mostrarTexto()">trocar texto </button>
-        <h1 id="resultadoTexto">NENHUM TEXTO DIGITADO</h1>
-    </table>
+   <input id="input-texto"> 
+
+  <tr id="esquerda">
+          <button type="button" id="btnMostrarTexto" onclick="MostrarTexto()" class="btn btn-primary">mostrar texto</button>
+  </tr>
+         
+  <tr id="centro">
+         <button type="button" id="btnOcultarTexto" onclick="OcultarTexto()" class="btn btn-success">ocultar texto </button>
+  </tr>
+
+  <tr id="direita">
+              <button type="button" id="btnTrocarcor" onclick="MudarCor()" class="btn-danger">trocar cor</button>
+  </tr>
+
+      </table>
+
+        <table>
+            <input id="input-texto">
+            <button id="btnTrocartexto" onclick="mostrarTexto()" class="btn-waning">mostrar texto </button>
+            <h1 id="resultadoTexto">NENHUM TEXTO DIGITADO</h1>
+        </table>
 </body>
 
 
@@ -36,8 +46,20 @@
     document.getElementById('resultadoTexto').textContent =
     document.getElementById('input-texto').value;
 }
+function MudarCor(){
+    document.getElementById("resultadoTexto").style.color="red";
+}
+function OcultarTexto(){
+    document.getElementById("resultadoTexto").style.color="white";
+}
+function MostrarTexto(){
+    document.getElementById("resultadoTexto").style.color="black";
+}
 
 </script>
+
+
+
 
 
 </html>
